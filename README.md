@@ -5,17 +5,17 @@ In this assignment, you will write two Python functions:
 - A function to convert a decimal value to a binary number (returned as a string).
 ## Instructions:
 1. **Binary to Decimal Conversion (binary_to_decimal())**
-    - Write a function named binary_to_decimal(binary_str) that takes in a binary number as a string (e.g., "1011") and returns the decimal equivalent as an integer.
+    - Write a function named binary_to_decimal(binary_str) that takes in an eight-bit binary number as a string (e.g., "00001011") and returns the decimal equivalent as an integer.
     - Constraints: You should not use Python's built-in functions like int() with base arguments, or bin().
 2. Decimal to Binary Conversion (decimal_to_binary)
-    - Write a function named decimal_to_binary(decimal_num) that takes in a decimal number (e.g., 11) and returns the binary equivalent as a string (e.g., "1011").
+    - Write a function named decimal_to_binary(decimal_num) that takes in a decimal number (e.g., 11) no larger than 255 and returns the eight-bit binary equivalent as a string (e.g., "00001011").
     - Constraints: You should not use Python's built-in functions like bin().
 
 ## Example:
 **Binary to Decimal:**
 ```python
 python
-binary_str = "1101"
+binary_str = "00001101"
 decimal_value = binary_to_decimal(binary_str)
 print(decimal_value)  # Output should be 13
 ```
@@ -23,7 +23,7 @@ print(decimal_value)  # Output should be 13
 ```python
 decimal_num = 13
 binary_value = decimal_to_binary(decimal_num)
-print(binary_value)  # Output should be "1101"
+print(binary_value)  # Output should be "00001101"
 ```
 
 **Hints:**
